@@ -1,0 +1,24 @@
+{
+    "name": "nuxt-pocketbase",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "dependencies": {
+        "joi": "^17.13.3",
+        "nuxt": "^3.13.0",
+        "pocketbase": "^0.21.4",
+        "vue": "latest"
+    },
+    "devDependencies": {
+        "@nuxt/fonts": "^0.7.2",
+        "@nuxt/ui": "^2.18.4"
+    },
+    "author": "sxoorp",
+    "license": "MIT"
+}
