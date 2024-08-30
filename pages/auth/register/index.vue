@@ -43,14 +43,14 @@ const handleSubmit = async ({ data }: FormSubmitEvent<any>) => {
         <p class="text-2xl font-bold uppercase">Register</p>
         <UForm :schema="schema" :state="state" class="w-full md:w-80 flex flex-col gap-2 px-4" @submit="handleSubmit">
             <UFormGroup label="Username" name="username" required>
-                <UInput placeholder="Username" icon="i-heroicons-user-solid" size="lg" v-model="state.username" />
+                <UInput placeholder="Username" icon="i-heroicons-user" size="lg" v-model="state.username" />
             </UFormGroup>
             <UFormGroup label="Password" name="password" required>
-                <UInput type="password" placeholder="•••••••••••" icon="i-heroicons-key-solid" size="lg"
+                <UInput type="password" placeholder="•••••••••••" icon="i-heroicons-lock-closed" size="lg"
                     v-model="state.password" />
             </UFormGroup>
             <UFormGroup label="Confirm Password" name="confirmation" required>
-                <UInput type="password" placeholder="•••••••••••" icon="i-heroicons-key-solid" size="lg"
+                <UInput type="password" placeholder="•••••••••••" icon="i-heroicons-lock-closed" size="lg"
                     v-model="state.confirmation" />
             </UFormGroup>
             <UButton type="submit" variant="soft" size="lg" block :loading="loading">
